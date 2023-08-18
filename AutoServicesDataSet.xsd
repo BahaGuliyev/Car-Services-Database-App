@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AutoServicesDataSet" targetNamespace="http://tempuri.org/AutoServicesDataSet.xsd" xmlns:mstns="http://tempuri.org/AutoServicesDataSet.xsd" xmlns="http://tempuri.org/AutoServicesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AutoServicesConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AutoServicesConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Avtomobil_salonları_Informasiya_Sistemleri_Lab_işi.Properties.Settings.GlobalReference.Default.AutoServicesConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_AutoServicesTableAdapter" GeneratorDataComponentClassName="View_AutoServicesTableAdapter" Name="View_AutoServices" UserDataComponentName="View_AutoServicesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AutoServicesConnectionString (Settings)" DbObjectName="AutoServices.dbo.View_AutoServices" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Car_ID, Service_ID, Car_Owner, Car_Manufacturer, Car_Name, Production_Year, Car_Engine, Fuel_Type, Car_Problem, Service_Name, Service_Owner, Service_Number, Employee_Count, Service_Address FROM dbo.View_AutoServices</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Car_ID" DataSetColumn="Car_ID" />
+              <Mapping SourceColumn="Service_ID" DataSetColumn="Service_ID" />
+              <Mapping SourceColumn="Car_Owner" DataSetColumn="Car_Owner" />
+              <Mapping SourceColumn="Car_Manufacturer" DataSetColumn="Car_Manufacturer" />
+              <Mapping SourceColumn="Car_Name" DataSetColumn="Car_Name" />
+              <Mapping SourceColumn="Production_Year" DataSetColumn="Production_Year" />
+              <Mapping SourceColumn="Car_Engine" DataSetColumn="Car_Engine" />
+              <Mapping SourceColumn="Fuel_Type" DataSetColumn="Fuel_Type" />
+              <Mapping SourceColumn="Car_Problem" DataSetColumn="Car_Problem" />
+              <Mapping SourceColumn="Service_Name" DataSetColumn="Service_Name" />
+              <Mapping SourceColumn="Service_Owner" DataSetColumn="Service_Owner" />
+              <Mapping SourceColumn="Service_Number" DataSetColumn="Service_Number" />
+              <Mapping SourceColumn="Employee_Count" DataSetColumn="Employee_Count" />
+              <Mapping SourceColumn="Service_Address" DataSetColumn="Service_Address" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AutoServicesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AutoServicesDataSet" msprop:Generator_UserDSName="AutoServicesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_AutoServices" msprop:Generator_TableClassName="View_AutoServicesDataTable" msprop:Generator_TableVarName="tableView_AutoServices" msprop:Generator_TablePropName="View_AutoServices" msprop:Generator_RowDeletingName="View_AutoServicesRowDeleting" msprop:Generator_RowChangingName="View_AutoServicesRowChanging" msprop:Generator_RowEvHandlerName="View_AutoServicesRowChangeEventHandler" msprop:Generator_RowDeletedName="View_AutoServicesRowDeleted" msprop:Generator_UserTableName="View_AutoServices" msprop:Generator_RowChangedName="View_AutoServicesRowChanged" msprop:Generator_RowEvArgName="View_AutoServicesRowChangeEvent" msprop:Generator_RowClassName="View_AutoServicesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Car_ID" msprop:Generator_ColumnVarNameInTable="columnCar_ID" msprop:Generator_ColumnPropNameInRow="Car_ID" msprop:Generator_ColumnPropNameInTable="Car_IDColumn" msprop:Generator_UserColumnName="Car_ID" type="xs:int" />
+              <xs:element name="Service_ID" msprop:Generator_ColumnVarNameInTable="columnService_ID" msprop:Generator_ColumnPropNameInRow="Service_ID" msprop:Generator_ColumnPropNameInTable="Service_IDColumn" msprop:Generator_UserColumnName="Service_ID" type="xs:int" />
+              <xs:element name="Car_Owner" msprop:Generator_ColumnVarNameInTable="columnCar_Owner" msprop:Generator_ColumnPropNameInRow="Car_Owner" msprop:Generator_ColumnPropNameInTable="Car_OwnerColumn" msprop:Generator_UserColumnName="Car_Owner" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Car_Manufacturer" msprop:Generator_ColumnVarNameInTable="columnCar_Manufacturer" msprop:Generator_ColumnPropNameInRow="Car_Manufacturer" msprop:Generator_ColumnPropNameInTable="Car_ManufacturerColumn" msprop:Generator_UserColumnName="Car_Manufacturer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Car_Name" msprop:Generator_ColumnVarNameInTable="columnCar_Name" msprop:Generator_ColumnPropNameInRow="Car_Name" msprop:Generator_ColumnPropNameInTable="Car_NameColumn" msprop:Generator_UserColumnName="Car_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Production_Year" msprop:Generator_ColumnVarNameInTable="columnProduction_Year" msprop:Generator_ColumnPropNameInRow="Production_Year" msprop:Generator_ColumnPropNameInTable="Production_YearColumn" msprop:Generator_UserColumnName="Production_Year" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Car_Engine" msprop:Generator_ColumnVarNameInTable="columnCar_Engine" msprop:Generator_ColumnPropNameInRow="Car_Engine" msprop:Generator_ColumnPropNameInTable="Car_EngineColumn" msprop:Generator_UserColumnName="Car_Engine" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fuel_Type" msprop:Generator_ColumnVarNameInTable="columnFuel_Type" msprop:Generator_ColumnPropNameInRow="Fuel_Type" msprop:Generator_ColumnPropNameInTable="Fuel_TypeColumn" msprop:Generator_UserColumnName="Fuel_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Car_Problem" msprop:Generator_ColumnVarNameInTable="columnCar_Problem" msprop:Generator_ColumnPropNameInRow="Car_Problem" msprop:Generator_ColumnPropNameInTable="Car_ProblemColumn" msprop:Generator_UserColumnName="Car_Problem" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service_Name" msprop:Generator_ColumnVarNameInTable="columnService_Name" msprop:Generator_ColumnPropNameInRow="Service_Name" msprop:Generator_ColumnPropNameInTable="Service_NameColumn" msprop:Generator_UserColumnName="Service_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service_Owner" msprop:Generator_ColumnVarNameInTable="columnService_Owner" msprop:Generator_ColumnPropNameInRow="Service_Owner" msprop:Generator_ColumnPropNameInTable="Service_OwnerColumn" msprop:Generator_UserColumnName="Service_Owner" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service_Number" msprop:Generator_ColumnVarNameInTable="columnService_Number" msprop:Generator_ColumnPropNameInRow="Service_Number" msprop:Generator_ColumnPropNameInTable="Service_NumberColumn" msprop:Generator_UserColumnName="Service_Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_Count" msprop:Generator_ColumnVarNameInTable="columnEmployee_Count" msprop:Generator_ColumnPropNameInRow="Employee_Count" msprop:Generator_ColumnPropNameInTable="Employee_CountColumn" msprop:Generator_UserColumnName="Employee_Count" type="xs:int" minOccurs="0" />
+              <xs:element name="Service_Address" msprop:Generator_ColumnVarNameInTable="columnService_Address" msprop:Generator_ColumnPropNameInRow="Service_Address" msprop:Generator_ColumnPropNameInTable="Service_AddressColumn" msprop:Generator_UserColumnName="Service_Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_AutoServices" />
+      <xs:field xpath="mstns:Car_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
